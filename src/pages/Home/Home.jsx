@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import star from '../../assets/star.svg';
+import imdb from '../../assets/imdb-logo.svg';
 import './Home.scss'; 
 
 const Home = () => {
@@ -32,12 +34,26 @@ const Home = () => {
         value={search}
         onChange={e => setSearch(e.target.value)}
       />
-      {movies.map(movie => (
-        <div key={movie.id}>
-          <h2>{movie.title}</h2>
-          <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
-        </div>
-      ))}
+      <div className="home__container">
+        {movies.map(movie => (
+          <div className='card' key={movie.id}>
+            <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} className='card__image'/>
+            <div className='card__details'>
+              <h2>{movie.title}</h2>
+              <div className='card__details--average'>
+                <img src={imdb} alt="" className='imdb'/>
+                <p>{movie.vote_average}</p>
+                <img src={star} alt="" className='star'/>
+              </div>
+              <p>{movie.overview}</p>
+              <div className='card__buttons'>
+                <button>View Details</button>
+                <button>Add to Favorites</button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
