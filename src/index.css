@@ -31,7 +31,9 @@
     min-height: 100vh;
   }
   
-  h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
+  h1, h2, p {
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
   }
+    
