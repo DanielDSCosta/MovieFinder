@@ -23,7 +23,7 @@ const Home = () => {
   /* const filteredMovies = movies.filter(movie =>
     movie.title.toLowerCase().includes(search.toLowerCase())
   ); */
-
+ /* Salut Gael*/
   return (
     <div className="home">
       <h1 className="home__title">Movie Finder</h1>
