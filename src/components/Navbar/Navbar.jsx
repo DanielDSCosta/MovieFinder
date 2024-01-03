@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <NavLink to="/" className="navbar__logo-title"> 
-        <FaReact size={50} />  {/*  Logo provisoire */}
+      <img src="/favicon-32x32.png" alt="Logo" />  {/*  Logo provisoire */}
         <h1 className='navbar__title'>MOVIE FINDER</h1>
       </NavLink>
       <div className="navbar__buttons">
