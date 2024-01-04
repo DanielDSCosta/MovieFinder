@@ -1,22 +1,23 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
-import { Home, Favorites, Login, Signup, LatestReleases } from './pages/'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Footer, Header } from './components'
+import { Home, Login, Register, Reset/* , LatestReleases, Favorites */ } from './pages'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/favorites" element={<Favorites />} />
-        <Route path='/Login' element={<Login />} />
-        <Route path='/Signup' element={<Signup />} />
-        <Route path='/LatestReleases' element={<LatestReleases />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <div className='app'>
+      <Router>
+        <Header />
+        <Routes>
+          <Route exact path='/' element={<Login />} />
+          <Route exact path='/register' element={<Register />} />
+          <Route exact path='/reset' element={<Reset />} />
+          <Route exact path='/home' element={<Home />} />
+          {/* <Route exact path='/latest-releases' element={<LatestReleases />} />
+          <Route exact path='/favorites' element={<Favorites />} /> */}
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   )
 }
 

@@ -6,16 +6,15 @@ import './Navbar.scss';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <NavLink exact to="/" className="navbar__logo-title"> 
+      <NavLink to="/" className="navbar__logo-title"> 
         <FaReact size={50} />  {/*  Logo provisoire */}
         <h1 className='navbar__title'>MOVIE FINDER</h1>
       </NavLink>
       <div className="navbar__buttons">
-        <NavLink exact to="/">HOME</NavLink> 
-        <NavLink to="/latestreleases">LATEST RELEASES</NavLink> 
-        <NavLink to="/favorites">FAVORITES</NavLink> 
-        <NavLink to="/signup">SIGNUP</NavLink> 
-        <NavLink to="/login">LOGIN</NavLink> 
+        <NavLink to="/home">Accueil</NavLink> 
+        <NavLink to="/latest-releases">Dernières sortis</NavLink> 
+        <NavLink to="/favorites">Favoris</NavLink> 
+        <NavLink to="/register">Inscription</NavLink> 
       </div>
     </nav>
   );

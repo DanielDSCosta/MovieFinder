@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Favorites = () => {
+const Reset = () => {
   return (
     <div className='main-container'>
-      Super Favorites page for movies
+      ici c'est le reset
     </div>
   )
 }
 
-export default Favorites
+export default Reset

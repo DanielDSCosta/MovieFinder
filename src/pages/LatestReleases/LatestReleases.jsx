@@ -2,7 +2,7 @@ import React from 'react'
 
 const LatestReleases = () => {
   return (
-    <div>
+    <div className='main-container'>
       Ici en principe on devrait avoir les derniers films sortis
     </div>
   )
