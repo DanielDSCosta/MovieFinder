@@ -70,7 +70,7 @@ const Register = () => {
           Inscription avec Google
         </button>
         <div>
-          Already have an account? <Link to="/">Login</Link> now.
+          Tu a deja un compte? <Link to="/">Login</Link> maintenant.
         </div>
       </div>
     </div>
