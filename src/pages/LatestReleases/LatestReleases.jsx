@@ -39,7 +39,7 @@ const LatestReleases = () => {
   return (
     <div className='main-container'>
       <div className="latest-releases">
-        <h1 className="latest-releases__title">Latest Releases</h1>
+        <h2>Latest Releases</h2>
         <select className="latest-releases__category" onChange={handleCategoryChange}>
           <option value="all">All</option>
           {genres.map(genre => <option key={genre.id} value={genre.id}>{genre.name}</option>)}

@@ -45,13 +45,12 @@ const Home = () => {
   }, [user, loading, search]);
 
   return (
-    <div className = "main-container">
-      <div>
-        <h3>Hello {name} content de te revoir!</h3>
+    <div className="main-container">
+      <div className="home" >
+        <h2>Hello {name} content de te revoir!</h2>
         <button className="form__btn logout" type = "submit" onClick = {logout}>Déconnecter</button>
-        <input className="form__textBox" type="text" placeholder="Search for a movie..." />
         <input
-          className="home__search"
+          className="form__textBox"
           type="text"
           placeholder="Search for a movie..."
           value={search}
