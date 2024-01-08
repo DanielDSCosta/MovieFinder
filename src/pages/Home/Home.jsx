@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
-import { auth, db, logout } from "../../firebase";
+import { auth, db } from "../../firebase";
 import { query, collection, getDocs, where } from "firebase/firestore";
 import axios from 'axios';
 import star from '../../assets/star.svg';
@@ -48,9 +48,7 @@ const Home = () => {
     <div className="main-container">
       <div className="home" >
         <h2>Hello {name} content de te revoir!</h2>
-        <button className="form__btn logout" type = "submit" onClick = {logout}>Déconnecter</button>
         <input
-          className="form__textBox"
           type="text"
           placeholder="Search for a movie..."
           value={search}

@@ -44,7 +44,7 @@ const Login = () => {
         <input type="checkbox" id="chk" aria-hidden="true" />
         <div className="login">
           <div className="form-login">
-            <label htmlFor="chk" aria-hidden="true">Login</label>
+            <label htmlFor="chk" aria-hidden="true">Connexion</label>
             <input
               type="email"
               name="email"
@@ -105,7 +105,7 @@ const Login = () => {
               Inscription
             </button>
             <button onClick={signInWithGoogle}>
-              <div>Connecter avec <FcGoogle /></div>
+              <div>Inscription avec <FcGoogle /></div>
             </button>
           </div>
         </div>

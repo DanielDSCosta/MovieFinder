@@ -7,37 +7,33 @@
   color: white;
   width: 100%;
   box-sizing: border-box;
-
-  .navbar__logo-title {
+  &__logo {
     display: flex;
     align-items: center;
     color: white;
+    &--title {
+      font-size: 20px;
+      margin-left: 10px;
+      color: white;
+    }
   }
-
-  .navbar__title {
-    font-size: 20px;
-    margin-left: 10px;
-    color: white;
-  }
-
-  .navbar__buttons {
+  &__links {
     display: flex;
+    flex-direction: row;
     gap: 10px;
-
-    a { 
+    & a { 
       color: white;
       text-decoration: none; 
-
       &:hover {
         color: grey; 
       }
     }
-
-    button {
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-    }
+  }
+  &__logout {
+    width: auto;
+    height: auto;
+    background: none;
+    margin: 0;
+    cursor: pointer;
   }
 }
